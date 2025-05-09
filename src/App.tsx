@@ -3,12 +3,14 @@ import TodoList from "./components/TodoList";
 
 function App() {
   return (
-    <div className="py-8 min-h-screen">
-      <div className="p-6 mx-auto max-w-md bg-white rounded-lg shadow-lg">
-        <h1 className="mb-6 text-2xl font-bold text-center">
-          待办事项清单-可修改
-        </h1>
-        <TodoList />
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-12 px-4 sm:px-6">
+      <div className="max-w-xl mx-auto">
+        <div className="bg-white backdrop-blur-lg bg-opacity-80 rounded-2xl shadow-xl p-8 border border-gray-100">
+          <h1 className="text-3xl font-semibold text-gray-800 text-center mb-8">
+            待办事项
+          </h1>
+          <TodoList />
+        </div>
       </div>
     </div>
   );
